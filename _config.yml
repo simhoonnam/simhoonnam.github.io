@@ -1,0 +1,63 @@
+title: Simhoonnam Blog
+email: hoontweety@gmail.company
+description: |
+  comming soon
+
+
+baseurl: ''
+url: 'http://simhoonnam.github.io'
+timezone: Asia/Seoul
+
+repository: simhoonnam/simhoonnam.github.io
+
+permalink: /:year/:month/:day/:title/
+
+excerpt_separator: <!--more-->
+
+markdown: kramdown
+
+krandown:
+  input: GFM
+  highlighter: rouge
+
+gems:
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+paginate: 5
+paginate_path: '/page/:num/'
+
+collections:
+  authors:
+    output: true
+    permalink: /authors/:path/
+  tags:
+    output: true
+    permalink: /tags/:path/
+
+defaults:
+  - scope:
+      path: ''
+      type: authors
+    values:
+      layout: author
+  - scope:
+      path: ''
+      type: tags
+    values:
+      layout: tag
+
+exclude: [README.md, Gemfile, Gemfile.lock]
+
+keep_files: [assets, files]
+
+# iolo's custom
+author: hoontweety@gmail.com
+image: '/assets/images/default_blog_cover.jpg'
+asset_url: /assets
+#asset_url: //meta-kage.kakaocdn.net/dn/osa/blog/assets
+#asset_url: //t1.daumcdn.net/osa/blog/assets
+google_analytics:
+  ua: 'UA-139162303-1'
+github:
+  username: simhoonnam

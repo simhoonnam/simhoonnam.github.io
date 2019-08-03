@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://simhoonnam.github.io/sitemap.xml
